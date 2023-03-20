@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Design</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="design.html">
+                <img src="images/shopping-bag.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">Attire</span>
+            </a>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggle border-0" type="button" data-bs-toggle="collapse" data-bs-target = "#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark " href="#header">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark " href="#collection">Collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark " href="#special">Special</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark " href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark " href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark border-0" href="#popular">Popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!--header-->
+    <header id="header" class="vh-100 carousel slide"data-bs-ride="carousel" style="padding-top:104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best Collection</h2>
+                 <h1 class="text-uppercase py-2 fw-bold text-white">New Arrivals</h1>
+                 <a href="#" class="btn mt-3 text-uppercase">Shop Now</a>
+            </div>
+        
+       
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Best Price & Offer</h2>
+                 <h1 class="text-uppercase py-2 fw-bold text-white">New Season</h1>
+                 <a href="#" class="btn mt-3 text-uppercase">Buy Now</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button"data-bs-target="#header"data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button"data-bs-target="#header"data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        
+    </header>
+    <!--end header-->
+    <!--collection-->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                    <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark"data-filter=".best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark"data-filter=".feat">Featured</button>
+                    <button type="button" class="btn m-2 text-dark"data-filter=".new">New Arrival</button>
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/gray-shirt.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="images/1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="images/2.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/3.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/3.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/4.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/5.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative ">
+                            <img src="images/gray-shirt.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/4.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="images/5.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="images/6.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="images/7.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Gray Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--end collection-->
+    <!--special product-->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+              <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/8.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1">Western Top</p>
+                            <span class="fw-bold d-block">$ 45.50</span>
+                            <a href="#" class="btn btn-primary mt-3">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/9.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1">Western Top</p>
+                            <span class="fw-bold d-block">$ 45.50</span>
+                            <a href="#" class="btn btn-primary mt-3">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/10.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1">Western Top</p>
+                            <span class="fw-bold d-block">$ 45.50</span>
+                            <a href="#" class="btn btn-primary mt-3">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/11.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1">Western Top</p>
+                            <span class="fw-bold d-block">$ 45.50</span>
+                            <a href="#" class="btn btn-primary mt-3">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+    </section>
+    <!--end special product-->
+    <!--offers-->
+    <section id="offers" class="py-5">
+          <div class="container">
+            <div class="row d-flex align-items-center text-center justify-content-center justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-black">Discount Up To 40%</span>
+                    <h2 class="mt-2 mb-4 text-black">Grand Sale Offer!</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+          </div>
+    </section>
+    <!--end offers-->
+    <!--blogs-->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Latest Blogs</h2>
+
+            </div>
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/blog1.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Lorem ipsum, dolor sit amet consectetur adipsicing</h4>
+                        <p class="card-text mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan venenatis odio, eget malesuada libero sagittis et. Ut tempus lorem ac est condimentum, eget feugiat elit lacinia.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span>John Doe
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/blog1.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Lorem ipsum, dolor sit amet consectetur adipsicing</h4>
+                        <p class="card-text mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan venenatis odio, eget malesuada libero sagittis et. Ut tempus lorem ac est condimentum, eget feugiat elit lacinia.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span>John Doe
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/blog1.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Lorem ipsum, dolor sit amet consectetur adipsicing</h4>
+                        <p class="card-text mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan venenatis odio, eget malesuada libero sagittis et. Ut tempus lorem ac est condimentum, eget feugiat elit lacinia.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span>John Doe
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end blogs-->
+    <!--about us-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="Lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet tellus in nisl finibus hendrerit nec ut leo. Aliquam ut dapibus magna, at gravida risus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet tellus in nisl finibus hendrerit nec ut leo. Aliquam ut dapibus magna, at gravida risus.</p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/background.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end about us-->
+    <!--popular-->
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+               <h2 class="position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                      <h3 class="fs-5">Top Rated</h3>
+                      <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/gray-shirt.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/watch.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/jacket.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best Selling</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                      <img src="images/watch.jpg" alt="" class="img-fluid pe-3 w-25">
+                      <div>
+                          <p class="mb-0">Blue Shirt</p>
+                          <span>$ 20.00</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                      <img src="images/gray-shirt.jpg" alt="" class="img-fluid pe-3 w-25">
+                      <div>
+                          <p class="mb-0">Blue Shirt</p>
+                          <span>$ 20.00</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                      <img src="images/jacket.jpg" alt="" class="img-fluid pe-3 w-25">
+                      <div>
+                          <p class="mb-0">Blue Shirt</p>
+                          <span>$ 20.00</span>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-6 col-lg-4 row g-3">
+                <h3 class="fs-5">On Sale</h3>
+                <div class="d-flex align-items-start justify-content-start">
+                  <img src="images/jacket.jpg" alt="" class="img-fluid pe-3 w-25">
+                  <div>
+                      <p class="mb-0">Blue Shirt</p>
+                      <span>$ 20.00</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start justify-content-start">
+                  <img src="images/watch.jpg" alt="" class="img-fluid pe-3 w-25">
+                  <div>
+                      <p class="mb-0">Blue Shirt</p>
+                      <span>$ 20.00</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start justify-content-start">
+                  <img src="images/gray-shirt.jpg" alt="" class="img-fluid pe-3 w-25">
+                  <div>
+                      <p class="mb-0">Blue Shirt</p>
+                      <span>$ 20.00</span>
+                  </div>
+                </div>
+          </div>
+            </div>
+        </div>
+    </section>
+    <!--end popular-->
+    <!--newsletter-->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                     <h2 class="position-relative d-inline-block ms-4">NewsLetter Subscription</h2>
+                </div>
+                <p class="text-center text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ultricies augue.</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Email.................">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end newsletter-->
+    <!--footer-->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                   <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Attire</a>
+                   <p class="text-white text-muted mt-3">Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                   <h5 class="fw-light">Links</h5>
+                   <ul class="lst-unstyled">
+                    <li class="my-3">
+                        <a href="#" class="text-white text-decoration-none text-muted">
+                            <i class="fas fa-chevron-right me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="#" class="text-white text-decoration-none text-muted">
+                            <i class="fas fa-chevron-right me-1"></i>Collection
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="#" class="text-white text-decoration-none text-muted">
+                            <i class="fas fa-chevron-right me-1"></i>Blogs
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="#" class="text-white text-decoration-none text-muted">
+                            <i class="fas fa-chevron-right me-1"></i>About Us
+                        </a>
+                    </li>
+                   </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                   <h5 class="fw-light mb-3">Contact Us</h5>
+                   <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class="fw-right">
+                        Albert street,New York, A5 756, United States of America
+                    </span>
+                   </div>
+                   <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="fw-right">
+                       admin@gmail.com
+                    </span>
+                   </div>
+                   <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span class="fw-right">
+                        +1234 4563 12
+                    </span>
+                   </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                 <h5 class="fw-light mb-3">Follow Us</h5>
+                 <div>
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+    
+        <!--script-->
+
+        <script src="js/script.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <!--end script-->
+</body>
+</html>
